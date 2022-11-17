@@ -1,0 +1,12 @@
+node_modules
+.DS_Store
+.arch
+dist
+_debug
+*.local
+*.cmd
+*.lock
+.env
+makefile
+notes.txt
+

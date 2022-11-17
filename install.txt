@@ -1,0 +1,10 @@
+
+// yarn init -y
+// yarn add -D rollup rollup-plugin-terser vite
+
+
+just 'yarn' it. yarn must be installed globally.
+
+
+
+

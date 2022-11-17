@@ -1,0 +1,11 @@
+
+Hello Evgenii,
+
+Thank you for expressing interest in our "Web Game Developer" position.
+Could you please complete a small test task below?
+Create a responsive DIV with a size equal to 80% of viewport. Create a
+draggable interactive child element inside, which cannot be dragged
+outside the parent DIV.
+Results must be uploaded to Github, Gitlab, or another Git service,
+preserving the assembly pipeline, webpack.config.js/package.json etc.
+
