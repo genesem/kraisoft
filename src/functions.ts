@@ -19,7 +19,7 @@ export function dragReset( el:HTMLElement ) {
   offsetX = 0;
   offsetY = 0;
   flag = false;
-  el.style.transform = "translate3d(" + currX + "px, " + currY + "px, 0)";
+  el.style.transform = `translate3d(${currX}px,${currY}px, 0)`;
 }
 
 export function dragStart(
@@ -60,6 +60,6 @@ export function dragProcess(
 
     offsetX = currX;
     offsetY = currY;
-    el.style.transform = "translate3d(" + currX + "px, " + currY + "px, 0)";
+    el.style.transform = `translate3d(${currX}px,${currY}px, 0)`;
   }
 }

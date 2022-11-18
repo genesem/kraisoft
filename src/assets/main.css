@@ -1,6 +1,8 @@
 
 #main {
-      width: 80%;
+
+      width: 80vw;
+
       max-width: 1280px;
       min-height: 400px;
       display: inline-block;
@@ -31,7 +33,7 @@
 }
 
 #item > * {
-      font: 1.2em sans-serif;
+      /* font: 1.2em sans-serif; */
       background-color: #07dd4e;
       clip-path: circle(50, 10, 10);
 }
