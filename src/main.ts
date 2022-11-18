@@ -16,8 +16,6 @@ else
     console.error('#title === null');
 
 function initApp(el:HTMLElement, item:HTMLElement) {
-
-    console.debug("frame:", el, item);
     
     el.addEventListener("touchend", dragEnd, false);
     el.addEventListener("mouseup", dragEnd, false);
@@ -27,6 +25,7 @@ function initApp(el:HTMLElement, item:HTMLElement) {
     
     el.addEventListener("mousedown", (ev) => dragStart(item, ev), false);
     el.addEventListener("mousemove", (ev) => dragProcess(item, ev), false);
+   
 }
 
 // Alternative to load event
@@ -38,6 +37,7 @@ document.onreadystatechange = () => {
         item = document.getElementById("item") as HTMLElement;
         if( frame !== null && item !== null ) {
             initApp(frame, item);
+            dragReset( item );
         }
         else console.error('#frame or #item === null') 
 

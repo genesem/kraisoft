@@ -7,6 +7,9 @@ let currX: number;
 let currY: number;
 let flag: boolean = false;
 
+const stat1 = document.getElementById("stat1");
+const stat2 = document.getElementById("stat2");
+
 export function dragEnd() {
   startX = currX;
   startY = currY;
@@ -20,6 +23,8 @@ export function dragReset( el:HTMLElement ) {
   offsetY = 0;
   flag = false;
   el.style.transform = `translate3d(${currX}px,${currY}px, 0)`;
+  if(stat1 !==null)
+    stat1.innerText = `CurrX: ${currX}, CurrY ${currY}`;
 }
 
 export function dragStart(
@@ -50,6 +55,9 @@ export function dragProcess(
   
     ev.preventDefault();
   
+    if(stat1 !==null)
+      stat1.innerText = `CurrX: ${currX}, CurrY ${currY}`;
+
     if (ev.type === "touchmove") {
       currX = ev.touches[0].clientX - startX;
       currY = ev.touches[0].clientY - startY;

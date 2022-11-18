@@ -9,10 +9,10 @@ const assetsDir = 'inc'; // default is 'assets'
 const outMaps = (process.env.OUTMAPS=='true') || false;  // otherwise false considered as string
 
 const workMode = process.env.NODE_ENV || "development";
-
 const production = !process.env.PROD;
+const devPort = process.env.PORT || 3000;
+
 console.log("vite production is:", production);
-                      
 console.log("inputDir", inputDir);
 console.log("outDir", outDir);
 console.log("outMaps", outMaps);
@@ -61,7 +61,7 @@ export default {
   server: {
 
     // host: '127.0.0.1',  // default '127.0.0.1'
-    port: 3000,        // default 3000
+    port: devPort,
     strictPort: true,  // don't try to use another avail. port
   	cors: {
 		"origin": "*",
