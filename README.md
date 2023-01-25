@@ -1,4 +1,4 @@
-# for kraisoft
+# for SharpMind Games Ltd
 
 Task:
 	Create a responsive DIV with a size equal to 80% of viewport. Create a
