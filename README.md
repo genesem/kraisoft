@@ -18,7 +18,9 @@ How to:
 	4. build it with `yarn build`	
 
 
-Live demo is here: https://wadim.pages.dev/
+Live demo was here: ~~https://wadim.pages.dev/~~
+
+but fuck 'em they are scammers.
 
 thx.
 
